@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Crow’s Perch AI</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #0b0b0b;
-    color: white;
-    text-align: center;
-  }
-  header {
-    padding: 70px 20px;
-  }
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  p {
-    font-size: 1.1rem;
-    color: #ccc;
-  }
-  .highlight {
-    color: #9b59b6;
-    font-weight: bold;
-  }
-  footer {
-    margin-top: 60px;
-    padding: 20px;
-    color: #555;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crow’s Perch AI</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 70px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .highlight {
+      color: #9b59b6;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      color: #555;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-  <h1>🦅 Crow’s Perch AI</h1>
-  <p class="highlight">Emotional Intelligence Engine</p>
-  <p>Real-time insight. Conflict analysis. Tone mapping. Human clarity powered by AI.</p>
-</header>
 
-<footer>
-  © 2025 Crow’s Perch AI • All Rights Reserved  
-</footer>
+  <header>
+    <h1>🦅 Crow’s Perch AI</h1>
+    <p class="highlight">Emotional Intelligence Engine</p>
+    <p>Real-time insight. Conflict analysis. Tone mapping. Human clarity powered by AI.</p>
+  </header>
+
+  <footer>
+    © <span id="year"></span> Crow’s Perch AI • All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
-  </html>
+</html>
